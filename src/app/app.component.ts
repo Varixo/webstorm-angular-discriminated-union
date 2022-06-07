@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Interface, InterfaceA, InterfaceB } from './interfaces';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular14test';
+  interface: Interface = {
+    type: 'A'
+  };
+
+  maybeAsTypeA = (item: Interface): InterfaceA | undefined =>
+    item.type === 'A' ? item : undefined
+
+  maybeAsTypeB = (item: Interface): InterfaceB | undefined =>
+    item.type === 'B' ? item : undefined
 }

@@ -1,4 +1,4 @@
-# Angular14test
+# Angular discriminated union
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
 
